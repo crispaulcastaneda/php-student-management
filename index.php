@@ -47,6 +47,7 @@
         <table>
             <thead>
                 <tr>
+                    <th></th>
                     <th>First Name</th>
                     <th>Last Name</th>
                </tr>
@@ -54,6 +55,7 @@
             <tbody>
             <?php do{ ?>
                 <tr>
+                    <td><a href="details.php?ID=<?php echo $row['id'];?>">View</a></td>
                     <td><?php echo $row['first_name']; ?></td>
                     <td><?php echo $row['last_name']; ?></td>
                 </tr>
