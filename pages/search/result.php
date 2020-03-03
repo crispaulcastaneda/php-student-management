@@ -12,7 +12,7 @@
     }
 
 
-    include_once("connections/connection.php");
+    include_once("../../connections/connection.php");
 
     $con = connection();
     $search = $_GET['search'];
@@ -30,7 +30,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Student Management System</title>
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
         <h1>Student Management System</h1>
@@ -42,13 +42,13 @@
         </form>
 
         <?php if(isset($_SESSION['UserLogin'])){ ?>
-            <a href="logout.php">Logout</a>
+            <a href="../login/logout.php">Logout</a>
         <?php } else{ ?>
 
-            <a href="login.php">Login</a>
+            <a href="../login/login.php">Login</a>
         <?php } ?>
 
-        <a href="add.php">Add New</a>
+        <a href="../detail-action/add.php">Add New</a>
 
         <table>
             <thead>
@@ -61,7 +61,7 @@
             <tbody>
             <?php do{ ?>
                 <tr>
-                    <td><a href="details.php?ID=<?php echo $row['id'];?>">View</a></td>
+                    <td><a href="../detail-action/details.php?ID=<?php echo $row['id'];?>">View</a></td>
                     <td><?php echo $row['first_name']; ?></td>
                     <td><?php echo $row['last_name']; ?></td>
                 </tr>

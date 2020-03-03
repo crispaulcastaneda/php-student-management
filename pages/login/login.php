@@ -4,7 +4,7 @@
         session_start();
     }
 
-    include_once("connections/connection.php");
+    include_once("../../connections/connection.php");
     $con = connection();
 
     if(isset($_POST['login'])) {
@@ -22,7 +22,7 @@
             $_SESSION['UserLogin'] = $row['username'];
             $_SESSION['Access'] = $row['access'];
 
-            echo header("Location: index.php");
+            echo header("Location: ../../index.php");
         }else{
             echo "No User Found";
         }
@@ -38,7 +38,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Student Management System</title>
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <h1>Login Page</h1>

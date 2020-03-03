@@ -1,6 +1,6 @@
 <?php
 
-    include_once("connections/connection.php");
+    include_once("../../connections/connection.php");
     $con = connection();
     $id = $_GET['ID'];
 
@@ -30,7 +30,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Student Management System</title>
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
 

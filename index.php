@@ -35,19 +35,19 @@
         <h1>Student Management System</h1>
         <br><br>
 
-        <form action="result.php" method="get">
+        <form action="pages/search/result.php" method="get">
             <input type="text" name="search" id="search">
             <button type="submit">Search</button>
         </form>
 
         <?php if(isset($_SESSION['UserLogin'])){ ?>
-            <a href="logout.php">Logout</a>
+            <a href="pages/login/logout.php">Logout</a>
         <?php } else{ ?>
 
-            <a href="login.php">Login</a>
+            <a href="pages/login/login.php">Login</a>
         <?php } ?>
 
-        <a href="add.php">Add New</a>
+        <a href="pages/detail-action/add.php">Add New</a>
 
         <table>
             <thead>
@@ -60,7 +60,7 @@
             <tbody>
             <?php do{ ?>
                 <tr>
-                    <td><a href="details.php?ID=<?php echo $row['id'];?>">View</a></td>
+                    <td><a href="pages/detail-action/details.php?ID=<?php echo $row['id'];?>">View</a></td>
                     <td><?php echo $row['first_name']; ?></td>
                     <td><?php echo $row['last_name']; ?></td>
                 </tr>
