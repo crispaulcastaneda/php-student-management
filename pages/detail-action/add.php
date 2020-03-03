@@ -13,7 +13,7 @@
         $sql = "INSERT INTO `student_list`(`first_name`, `last_name`, `gender`) VALUES ('$fname', '$lname', '$gender')";
         $con->query($sql) or die ($con->error);
 
-        echo header("Location: index.php");
+        echo header("Location: ../../index.php");
     }
 ?>
 
