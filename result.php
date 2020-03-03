@@ -15,8 +15,9 @@
     include_once("connections/connection.php");
 
     $con = connection();
+    $search = $_GET['search'];
 
-    $sql = "SELECT * FROM student_list ORDER BY id DESC";
+    $sql = "SELECT * FROM student_list WHERE first_name LIKE '%$search%' || last_name LIKE '%$search%' ORDER BY id DESC";
     $students = $con->query($sql) or die ($con->error);
     $row = $students->fetch_assoc();
 
