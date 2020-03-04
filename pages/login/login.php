@@ -24,7 +24,7 @@
 
             echo header("Location: ../../index.php");
         }else{
-            echo "No User Found";
+            echo "<div class='message warning'>No user found.</div>";
         }
     }
 ?>
@@ -63,7 +63,6 @@
                 <img src="https://img.icons8.com/ultraviolet/40/000000/enter-key.png">
             </button>
         </form>
-
     </div>
 
 </body>

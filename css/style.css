@@ -160,6 +160,16 @@ tbody img {
     padding: 5px;
 }
 
-/************************
-**        EDIT
-************************/
+
+
+/* PHP Message */
+.message {
+    width: 100%;
+    padding: 1rem;
+}
+
+.message.warning {
+    background: #e9e77f;
+    border-left: 6px solid #ceca09;
+    color: #817f05;
+}
