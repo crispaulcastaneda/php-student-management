@@ -53,7 +53,6 @@
                 <option value="female" <?php echo ($row['gender'] == "Female")? 'selected' : '';?>>Female</option>
             </select>
 
-            <!-- <input type="submit" name="submit" value="Update"> -->
             <button class="btn-form btn-add" type="submit" name="submit">
                <img src="../../img/update.png" alt="Update button">
             </button>
