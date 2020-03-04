@@ -31,25 +31,33 @@
         <title>Student Management System</title>
 
         <link rel="stylesheet" href="../../css/style.css">
-</head>
-<body>
-        <h1>Student Management System</h1>
-        <br><br>
 
-        <form action="result.php" method="get">
+         <!-- Fonts -->
+         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="main-page">
+
+        <h1>Student Management System</h1>
+        <form action="pages/search/result.php" method="get" class="main-form">
             <input type="text" name="search" id="search">
-            <button type="submit">Search</button>
+            <button type="submit" class="btn-main">Search</button>
         </form>
 
+    <div class="table-set">
+
+    <div class="add-log">
         <?php if(isset($_SESSION['UserLogin'])){ ?>
-            <a href="../login/logout.php">Logout</a>
+            <a href="pages/login/logout.php"><img src="../../img/logout.png" alt="logout"></a>
         <?php } else{ ?>
 
-            <a href="../login/login.php">Login</a>
+            <a href="pages/login/login.php"><img src="../../img/login.png" alt="login"></a>
         <?php } ?>
 
-        <a href="../detail-action/add.php">Add New</a>
+        <a href="pages/detail-action/add.php"><img src="../../img/add.png" alt="Add"></a>
 
+        <a href="../../index.php"><img src="../../img/back.png"></a>
+    </div>
+    <div class="table-scroll">
         <table>
             <thead>
                 <tr>
@@ -61,12 +69,13 @@
             <tbody>
             <?php do{ ?>
                 <tr>
-                    <td><a href="../detail-action/details.php?ID=<?php echo $row['id'];?>">View</a></td>
+                    <td><a href="pages/detail-action/details.php?ID=<?php echo $row['id'];?>"><img src="../../img/view.png"></a></td>
                     <td><?php echo $row['first_name']; ?></td>
                     <td><?php echo $row['last_name']; ?></td>
                 </tr>
             <?php }while($row = $students->fetch_assoc())?>
             </tbody>
         </table>
-</body>
+    </div>
+            </div>
 </html>

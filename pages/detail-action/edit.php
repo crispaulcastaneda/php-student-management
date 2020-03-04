@@ -32,25 +32,34 @@
 
         <link rel="stylesheet" href="../../css/style.css">
 </head>
-<body>
+<body class="main-page">
 
-    <form action="" method="post">
+    <div class="wrapper">
+        <a href="../../index.php">
+            <img src="../../img/back.png" alt="back">
+        </a>
 
-        <label>First Name</label>
-        <input type="text" name="firstname" id="firstname" value="<?php echo $row['first_name'];?>">
+        <form action="" method="post" class="form-wrapper">
 
-        <label>Last Name</label>
-        <input type="text" name="lastname" id="lastname" value="<?php echo $row['last_name'];?>">
+            <label>First Name</label>
+            <input type="text" name="firstname" id="firstname" value="<?php echo $row['first_name'];?>">
 
-        <label>Gender</label>
-        <select name="gender">
-            <option value="male" <?php echo ($row['gender'] == "Male")? 'selected' : '';?>>Male</option>
-            <option value="female" <?php echo ($row['gender'] == "Female")? 'selected' : '';?>>Female</option>
-        </select>
+            <label>Last Name</label>
+            <input type="text" name="lastname" id="lastname" value="<?php echo $row['last_name'];?>">
 
-        <input type="submit" name="submit" value="Update">
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male" <?php echo ($row['gender'] == "Male")? 'selected' : '';?>>Male</option>
+                <option value="female" <?php echo ($row['gender'] == "Female")? 'selected' : '';?>>Female</option>
+            </select>
 
-    </form>
+            <!-- <input type="submit" name="submit" value="Update"> -->
+            <button class="btn-form btn-add" type="submit" name="submit">
+               <img src="../../img/update.png" alt="Update button">
+            </button>
+
+        </form>
+    </div>
 
 </body>
 </html>

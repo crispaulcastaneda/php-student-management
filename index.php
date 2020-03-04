@@ -6,9 +6,9 @@
     }
 
     if(isset($_SESSION['UserLogin'])) {
-        echo "Welcome ".$_SESSION['UserLogin'];
+         "Welcome ".$_SESSION['UserLogin'];
     }else{
-        echo "Welcome Guest";
+        echo "Welcome Guest!";
     }
 
 
@@ -30,42 +30,49 @@
         <title>Student Management System</title>
 
         <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-        <h1>Student Management System</h1>
-        <br><br>
 
-        <form action="pages/search/result.php" method="get">
+         <!-- Fonts -->
+         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="main-page">
+
+        <h1>Student Management System</h1>
+        <form action="pages/search/result.php" method="get" class="main-form">
             <input type="text" name="search" id="search">
-            <button type="submit">Search</button>
+            <button type="submit" class="btn-main">Search</button>
         </form>
 
-        <?php if(isset($_SESSION['UserLogin'])){ ?>
-            <a href="pages/login/logout.php">Logout</a>
-        <?php } else{ ?>
+    <div class="table-set">
+        <div class="add-log">
+            <?php if(isset($_SESSION['UserLogin'])){ ?>
+                <a href="pages/login/logout.php"><img src="img/logout.png" alt="logout"></a>
+            <?php } else { ?>
 
-            <a href="pages/login/login.php">Login</a>
-        <?php } ?>
+                <a href="pages/login/login.php"><img src="img/login.png" alt="login"></a>
+            <?php } ?>
 
-        <a href="pages/detail-action/add.php">Add New</a>
-
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-               </tr>
-            </thead>
-            <tbody>
-            <?php do{ ?>
-                <tr>
-                    <td><a href="pages/detail-action/details.php?ID=<?php echo $row['id'];?>">View</a></td>
-                    <td><?php echo $row['first_name']; ?></td>
-                    <td><?php echo $row['last_name']; ?></td>
+            <a href="pages/detail-action/add.php"><img src="img/add.png" alt="logout"></a>
+        </div>
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>View Details</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
                 </tr>
-            <?php }while($row = $students->fetch_assoc())?>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                <?php do{ ?>
+                    <tr>
+                        <td><a href="pages/detail-action/details.php?ID=<?php echo $row['id'];?>"><img src="img/view.png"></a></td>
+                        <td><?php echo $row['first_name']; ?></td>
+                        <td><?php echo $row['last_name']; ?></td>
+                    </tr>
+                <?php }while($row = $students->fetch_assoc())?>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>

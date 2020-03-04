@@ -47,7 +47,6 @@
 <body class="login-body">
 
     <div class="wrapper">
-
         <form action="" method="post" class="form-wrapper">
             <div class="image-header">
                 <img src="../../img/scholarship.png" alt="FlatIcon">

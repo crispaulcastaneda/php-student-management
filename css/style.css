@@ -1,9 +1,15 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 h1 {
     text-align: center;
+    color: #ff6348;
 }
 
 table {
@@ -19,8 +25,8 @@ th, td {
 }
 
 tr:nth-child(even) {
-    background: #c2bcbc;
-    color: #fff;
+    background: #2f3542;
+    color: #ffffff;
 }
 
 
@@ -28,8 +34,7 @@ tr:nth-child(even) {
 **        LOGIN
 ************************/
 .login-body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    background: url(../img/class-2.jpg);
+    background: url(../img/concrete.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -38,12 +43,10 @@ tr:nth-child(even) {
 .form-wrapper {
     max-width: 380px;
     margin: 0 auto;
-    background: #ebb41dad;
-
+    background: #718093ab;
     position: relative;
     top: 70px;
     padding: 80px;
-
     text-align: center;
 }
 
@@ -56,8 +59,9 @@ tr:nth-child(even) {
     font-size: 20px;
 }
 
-input[type="text"],
-input[type="password"] {
+.form-wrapper
+input[type=text],
+input[type=password] {
     display: block;
     width: 200px;
     padding: 10px;
@@ -73,3 +77,89 @@ input[type="password"] {
     overflow: hidden;
     outline: none;
 }
+
+/************************
+**        INDEX
+************************/
+.main-page {
+    background: #ced6e0;
+}
+
+.main-form
+input[type=text],
+.btn-main {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.table-set {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.add-log {
+    text-align: center;
+}
+
+.add-log img {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.table-scroll {
+    height: 420px;
+    overflow: scroll;
+    padding-top: 15px;
+}
+
+tbody img {
+    width: 50px;
+}
+
+
+/************************
+**        ADD
+************************/
+.form-wrapper label {
+    display: inline-block;
+    padding: 15px;
+}
+
+.form-wrapper
+.btn-add {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-add img {
+    width: 60px;
+}
+
+.wrapper a img {
+    width: 60px;
+}
+
+/************************
+**        DETAILS
+************************/
+
+.btn-details {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.gender-type {
+    background: #57606f;
+    color: #f1f2f6;
+    padding: 5px;
+}
+
+/************************
+**        EDIT
+************************/

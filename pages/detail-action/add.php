@@ -25,27 +25,38 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Student Management System</title>
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../../css/style.css">
+
+         <!-- Fonts -->
+         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="main-page">
 
-    <form action="" method="post">
+    <div class="wrapper">
+        <a href="../../index.php">
+            <img src="../../img/back.png" alt="back">
+        </a>
 
-        <label>First Name</label>
-        <input type="text" name="firstname" id="firstname">
+        <form action="" method="post" class="form-wrapper">
 
-        <label>Last Name</label>
-        <input type="text" name="lastname" id="lastname">
+            <label>First Name</label>
+            <input type="text" name="firstname" id="firstname">
 
-        <label>Gender</label>
-        <select name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select>
+            <label>Last Name</label>
+            <input type="text" name="lastname" id="lastname">
 
-        <input type="submit" name="submit" value="Submit">
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
 
-    </form>
+            <!-- <input type="submit" name="submit" value="Submit"> -->
+            <button class="btn-form btn-add" type="submit" name="submit">
+               <img src="https://img.icons8.com/plasticine/100/000000/submit-progress.png">
+            </button>
+        </form>
+    </div>
 
 </body>
 </html>
