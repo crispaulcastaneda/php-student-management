@@ -38,19 +38,34 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Student Management System</title>
 
+        <!-- Main CSS -->
         <link rel="stylesheet" href="../../css/style.css">
-</head>
-<body>
-    <h1>Login Page</h1>
-    <br>
 
-    <form action="" method="post">
-        <label>Username</label>
-            <input type="text" name="username" id="username">
-        <label>Password</label>
-            <input type="password" name="password" id="password">
-        <button type="submit" name="login">Login</button>
-    </form>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+
+    <div class="wrapper">
+
+        <form action="" method="post" class="form-wrapper">
+            <div class="image-header">
+                <img src="../../img/scholarship.png" alt="FlatIcon">
+            </div>
+
+            <input type="text" name="username" id="username"
+                    placeholder="Username" class="form-control" required autofocus="true">
+                <br>
+            <input type="password" name="password" id="password" placeholder="Password" required
+                    class="form-control">
+                    <br>
+
+            <button class="btn-form" type="submit" name="login">
+                <img src="https://img.icons8.com/ultraviolet/40/000000/enter-key.png">
+            </button>
+        </form>
+
+    </div>
 
 </body>
 </html>

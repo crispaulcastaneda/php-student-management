@@ -22,3 +22,54 @@ tr:nth-child(even) {
     background: #c2bcbc;
     color: #fff;
 }
+
+
+/************************
+**        LOGIN
+************************/
+.login-body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: url(../img/class-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.form-wrapper {
+    max-width: 380px;
+    margin: 0 auto;
+    background: #ebb41dad;
+
+    position: relative;
+    top: 70px;
+    padding: 80px;
+
+    text-align: center;
+}
+
+.image-header img {
+    width: 20%;
+    margin: 15px;
+}
+
+.form-signin-heading {
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+.btn-form {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline: none;
+}
