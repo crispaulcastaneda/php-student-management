@@ -177,6 +177,7 @@ tbody img {
 
 .message.admin {
     background: #e9e77f;
+<<<<<<< HEAD
     border-left: 6px solid #056881;
     color: #056881;
 }
@@ -185,4 +186,8 @@ tbody img {
     background: #4f5d9c;
     border-left: 6px solid #ffffee;
     color: #ffffee;
+=======
+    border-left: 6px solid #ffffee;
+    color: #056881;
+>>>>>>> 8a9d19b9e8d539726aa00bb2dc7e21e3c9e8d45d
 }
