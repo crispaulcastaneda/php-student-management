@@ -164,12 +164,25 @@ tbody img {
 
 /* PHP Message */
 .message {
-    width: 100%;
+    width: 30%;
     padding: 1rem;
 }
 
 .message.warning {
     background: #e9e77f;
-    border-left: 6px solid #ceca09;
+    border-left: 6px solid #817f05;
     color: #817f05;
+}
+
+
+.message.admin {
+    background: #e9e77f;
+    border-left: 6px solid #056881;
+    color: #056881;
+}
+
+.message.info {
+    background: #4f5d9c;
+    border-left: 6px solid #ffffee;
+    color: #ffffee;
 }

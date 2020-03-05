@@ -24,7 +24,7 @@
 
             echo header("Location: ../../index.php");
         }else{
-            echo "<div class='message warning'>No user found.</div>";
+            echo "<div class='message warning'>No user found 😥</div>";
         }
     }
 ?>
