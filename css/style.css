@@ -173,3 +173,10 @@ tbody img {
     border-left: 6px solid #ceca09;
     color: #817f05;
 }
+
+
+.message.admin {
+    background: #e9e77f;
+    border-left: 6px solid #ffffee;
+    color: #056881;
+}

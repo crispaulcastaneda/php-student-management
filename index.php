@@ -6,7 +6,7 @@
     }
 
     if(isset($_SESSION['UserLogin'])) {
-        echo "Welcome ".$_SESSION['UserLogin'];
+        echo "<div class='message admin'>Welcome Admin!</div> ".$_SESSION['UserLogin'];
     }else{
         echo "<div class='message warning'>Welcome Guest!</div>";
     }
