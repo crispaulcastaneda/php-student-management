@@ -6,7 +6,7 @@
     }
 
     if(isset($_SESSION['Access']) && $_SESSION['Access'] == "administrator") {
-        echo "Welcome ".$_SESSION['UserLogin']."<br> <br>";
+        echo "<div class='message admin'>Welcome " .$_SESSION['UserLogin']. ' 👦</div>';
     } else {
         echo header("Location: ../../index.php");
     }

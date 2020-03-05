@@ -6,11 +6,7 @@
     }
 
     if(isset($_SESSION['UserLogin'])) {
-<<<<<<< HEAD
         echo "<div class='message admin'>Welcome " .$_SESSION['UserLogin']. ' 👦</div>';
-=======
-        echo "<div class='message admin'>Welcome Admin!</div> ".$_SESSION['UserLogin'];
->>>>>>> 8a9d19b9e8d539726aa00bb2dc7e21e3c9e8d45d
     }else{
         echo "<div class='message info'>Welcome Guest! 🙋‍♂️</div>";
     }
